@@ -29,7 +29,7 @@
 
 int main()
 {
-	int i,b=0,j=0;  
+	int a,x=0,b=0;  
 	RCC_AHB1ENR |= (1<<3)|(1<<0); 
 	GPIOD_MODE = 0; 
 	GPIOA_MODE = 0; 
@@ -44,99 +44,92 @@ int main()
 	{
 					while((GPIOA_IDR & 0x01) == 1) 
 					{
-						b++; 
+						x++; 
 					}
-					if(b>30000)
+					if(x>3000)
 				    {
-					b=0;
+					x=0;
 					GPIOD_ODR |= 1<<14;
-					for(i=0;i<100000;i++);
+					for(a=0;a<10000;a++);
 					}
-					else if(b>0 && b<30000)
+					else if(x>0 && x<3000)
 					{
-					j=1;
+					b=1;
                     }
 					else
 					{
 
 					}
-						if(j==1)
+						if(b==1)
 						{
 
-					   
-
-				        for(j=0;j<5;j++) //For LED GREEN
+				        for(j=0;j<5;j++)
 						{
 						GPIOD_ODR |= 1<<12;
-						for(i=0;i<20000;i++);
+						for(a=0;a<2000;a++);
 						GPIOD_ODR &= ~(1<<12);
-						for(i=0;i>=20000;i++);
+						for(a=0;a>=2000;a++);
 						}
-						for(j=0;j<5;j++)  
+						for(b=0;b<5;b++)  
 						{
 						GPIOD_ODR |= 1<<13;
-						for(i=0;i<20000;i++);
+						for(a=0;a<2000;a++);
 						GPIOD_ODR &= ~(1<<13);
-					    for(i=0;i>=20000;i++);
+					    for(a=0;a>=2000;a++);
 						}
-						for(j=0;j<5;j++)   
+						for(b=0;b<5;b++)   
 						{
 						GPIOD_ODR |= 1<<15;
-						for(i=0;i<20000;i++);
+						for(a=0;a<2000;a++);
 						GPIOD_ODR &= ~(1<<15);
-						for(i=0;i>=20000;i++);
+						for(a=0;a>=2000;a++);
 						}
 
-						
-
-						for(j=0;j<5;j++)  
+						for(b=0;b<5;b++)  
 						{
 						GPIOD_ODR |= 1<<12;
-						for(i=0;i<40000;i++);
+						for(a=0;a<4000;a++);
 						GPIOD_ODR &= ~(1<<12);
-						for(i=0;i>=40000;i++);
+						for(a=0;a>=4000;a++);
 						}
-						for(j=0;j<5;j++)  
+						for(b=0;b<5;b++)  
 						{
 						GPIOD_ODR |= 1<<13;
-						for(i=0;i<40000;i++);
+						for(a=0;a<4000;a++);
 						GPIOD_ODR &= ~(1<<13);
-						for(i=0;i>=40000;i++);
+						for(a=0;a>=4000;a++);
 						}
-						for(j=0;j<5;j++)  
+						for(b=0;b<5;b++)  
 						{
 						GPIOD_ODR |= 1<<15;
-						for(i=0;i<40000;i++);
+						for(a=0;a<4000;a++);
 					    GPIOD_ODR &= ~(1<<15);
-						for(i=0;i>=40000;i++);
+						for(a=0;a>=4000;a++);
 						}
 						
-
-						for(j=0;j<5;j++)  
+						for(b=0;b<5;b++)  
 					    {
 						GPIOD_ODR |= 1<<12;
-						for(i=0;i<80000;i++);
+						for(a=0;a<8000;a++);
 						GPIOD_ODR &= ~(1<<12);
-						for(i=0;i>=80000;i++);
+						for(a=0;a>=8000;a++);
 						}
-						for(j=0;j<5;j++)  
+						for(b=0;b<5;b++)  
 						{
 						GPIOD_ODR |= 1<<13;
-						for(i=0;i<80000;i++);
+						for(a=0;a<8000;a++);
 						GPIOD_ODR &= ~(1<<13);
-						for(i=0;i>=80000;i++);
+						for(a=0;a>=8000;a++);
 						}
-						for(j=0;j<5;j++) 
+						for(b=0;b<5;b++) 
 						{
 						GPIOD_ODR |= 1<<15;
-						for(i=0;i<80000;i++);
+						for(a=0;a<8000;a++);
 						GPIOD_ODR &= ~(1<<15);
-						for(i=0;i>=80000;i++);
+						for(a=0;a>=8000;a++);
 						}
 
 						}
-
-
 	}
 	return 0;
 }
