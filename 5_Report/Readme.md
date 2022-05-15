@@ -1,6 +1,6 @@
 # WIPER CONTROL SYSTEM
 ## ABSTRACT
-
+  Wiper is an essential component that used to wipe the raindrops or any water from the windscreen. A windshield wiper is a very important part that permits a driver to collect the visual information at the time of precipitation of rain from the vehicle components aspect that influences the driver's safety and comfort. wiper consists of three operating speed. The wiper parts visible from outside the car are the rubber blade, the wiperarm holding the blade, a spring linkage, and parts of the wiper pivots. Driving a car in the rain is tough, so using wipers to clean the mirror. Here, I am using STM32 with arm based microcontroller to build the wiper control system.
 ## INTRODUCTION
 Wiper is an essential component that used to wipe the raindrops or any water from the windscreen. wiper consists of three operating speed.The wiper parts visible from outside the car are the rubber blade, the wiperarm holding the blade, a spring linkage, and parts of the wiper pivots.Driving a car in the rain is tough, so using wipers to clean the mirror.
 
@@ -35,29 +35,5 @@ Wiper is an essential component that used to wipe the raindrops or any water fro
 ### HOW
   *  These motor driven arm devices with flexible blades can be used by the push of a button. When the button is pushed, the wiper starts to move and clear the windshield off of any dirt or water droplets.
 
-## High Level Requirements
-| Test ID | Description | Exp.i/p | Exp.o/p | Actual o/p | STATUS |
-| --------|:------------|:--------|:--------|:-----------|:-------------|
-| 1 | whether the button is pressed or not  | program execution | Engine starts | Red Led ON| SUCCESS |
-| 2 | whether the button is pressed or not  | program execution | wiper starts | Blue Led ON| SUCCESS |
-| 3 | whether the button is pressed or not  | program execution | wiper starts | Green Led ON| SUCCESS |
-| 4 | whether the button is pressed or not  | program execution | wiper starts | Orange Led ON| SUCCESS |
-| 5 | whether the button is pressed or not  | - | Engine stops | Led Turned OFF| SUCCESS |
 
-
-
-
-
-
-
-
-
-## Low Level Requirements
-| Test ID | Description | Exp.i/p | Exp.o/p | Actual o/p | STATUS |
-| --------|:------------|:--------|:--------|:-----------|:-------------|
-| 1 | whether the button is pressed again or not  | program execution | Engine starts | Red Led ON| SUCCESS |
-| 2 | whether the button is pressed again or not | program execution | wiper starts and speed of wiper is slow | Blue Led ON| SUCCESS |
-| 3 | whether the button is pressed again or not | program execution | wiper starts and speed of wiper is moderate | Green Led ON| SUCCESS |
-| 4 | whether the button is pressed again or not | program execution | wiper starts and speed of wiper is good | Orange Led ON| SUCCESS |
-| 5 | whether the button is pressed again or not | - | Engine stops | Led Turned OFF| SUCCESS |
 
