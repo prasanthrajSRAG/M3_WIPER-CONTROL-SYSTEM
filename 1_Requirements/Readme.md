@@ -29,19 +29,28 @@ Wiper is an essential component that used to wipe the raindrops or any water fro
 
 
 
-### HIGH LEVEL REQUIREMENTS:
-| ID  |                 DESCRIPTION                           | CATEGORY  | STATUS      |
-| :--- |     :---:                                             |      ---: |  ---:       |            
-| HR01 | ACC Mode               | Technical | IMPLEMENTED |             
-| HR02 | Ignition mode                  | Technical | IMPLEMENTED |         
-| HR03 | Wiper ON       | Technical | IMPLEMENTED |
-| HR04 | Wiper OFF            | Technical | IMPLEMENTED |
+## High Level Requirements
+| Test ID | Description | Exp.i/p | Exp.o/p | Actual o/p | STATUS |
+| --------|:------------|:--------|:--------|:-----------|:-------------|
+| 1 | whether the button is pressed or not  | program execution | Engine starts | Red Led ON| SUCCESS |
+| 2 | whether the button is pressed or not  | program execution | wiper starts | Blue Led ON| SUCCESS |
+| 3 | whether the button is pressed or not  | program execution | wiper starts | Green Led ON| SUCCESS |
+| 4 | whether the button is pressed or not  | program execution | wiper starts | Orange Led ON| SUCCESS |
+| 5 | whether the button is pressed or not  | - | Engine stops | Led Turned OFF| SUCCESS |
 
-   
-### LOW LEVEL REQUIREMENTS:
-   | ID   |                    DESCRIPTION                                                                                              | Status(Implemented/Future) |
-| :--- |                   :---:                                                                                                     |       :---:    |
-| LR01 | To turning on Red Led - Button pressed only once for two seconds                                                            |  IMPLEMENTED               |          |
-| LR02 | To turning of off Red Led - Button pressed once again times -                                       |  IMPLEMENTED               |  
-| LR03 | To turning on Blue, Green, Orange Led's - Button pressed two times                                                        |  IMPLEMENTED               |  
-| LR04 | To Turning off Orange, Green, Blue Led's- Button pressed again for two seconds                                                         |  IMPLEMENTED               |  
+
+
+
+
+
+
+
+
+## Low Level Requirements
+| Test ID | Description | Exp.i/p | Exp.o/p | Actual o/p | STATUS |
+| --------|:------------|:--------|:--------|:-----------|:-------------|
+| 1 | whether the button is pressed again or not  | program execution | Engine starts | Red Led ON| SUCCESS |
+| 2 | whether the button is pressed again or not | program execution | wiper starts and speed of wiper is slow | Blue Led ON| SUCCESS |
+| 3 | whether the button is pressed again or not | program execution | wiper starts and speed of wiper is moderate | Green Led ON| SUCCESS |
+| 4 | whether the button is pressed again or not | program execution | wiper starts and speed of wiper is good | Orange Led ON| SUCCESS |
+| 5 | whether the button is pressed again or not | - | Engine stops | Led Turned OFF| SUCCESS |
