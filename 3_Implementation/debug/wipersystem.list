@@ -1,5 +1,5 @@
 
-wiper.elf:     file format elf32-littlearm
+wipersystem.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
